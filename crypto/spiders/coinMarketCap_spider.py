@@ -3,27 +3,27 @@ from ..items import CryptoMarketItem
 import numpy as np
 
 
-class CoinMarketCapSpider(scrapy.Spider) :
+class CoinMarketCapSpider(scrapy.Spider):
     name = 'cryptoMarket'
     start_urls = [
         "https://coinmarketcap.com/"
     ]
 
-    def parse(self, response) :
+    def parse(self, response):
         crypto = CryptoMarketItem()
 
         all_crypto = response.css('tr')
 
-        for cryptos in all_crypto :
-            name = cryptos.css('.iJjGCS::text').extract()
-            symbol = cryptos.css('.coin-item-symbol::text').extract()
-            price = cryptos.css('.cLgOOr .cmc-link::text').extract()
-            percent_change_24h = cryptos.css('td:nth-child(5) .sc-1v2ivon-0::text').extract()
-            percent_24 = cryptos.css('td:nth-child(5) .sc-1v2ivon-0 span::attr(class)').extract()
-            percent_change_7d = cryptos.css('td:nth-child(6) .sc-1v2ivon-0::text').extract()
-            percent_7 = cryptos.css('td:nth-child(6) .sc-1v2ivon-0 span::attr(class)').extract()
-            market_cap = cryptos.css('.ieFnWP::text').extract()
-            volume_24 = cryptos.css('.font_weight_500___2Lmmi::text').extract()
+        for cryptos in all_crypto:
+            name = cryptos.xpath('td[3]/div/a/div/div/p/text()').extract()
+            symbol = cryptos.xpath('td[3]/div/a/div/div/div/p/text()').extract()
+            price = cryptos.xpath('td[4]/div/a/text()').extract()
+            percent_change_24h = cryptos.xpath('td[5]/span/text()').extract()
+            percent_24 = cryptos.xpath('td[5]/span/span/@class').extract()
+            percent_change_7d = cryptos.xpath('td[6]/span/text()').extract()
+            percent_7 = cryptos.xpath('td[6]/span/span/@class').extract()
+            market_cap = cryptos.xpath('td[7]/p/span[2]/text()').extract()
+            volume_24 = cryptos.xpath('td[8]/div/a/p/text()').extract()
 
             crypto['name'] = name
             crypto['symbol'] = symbol
@@ -35,5 +35,5 @@ class CoinMarketCapSpider(scrapy.Spider) :
             crypto['market_cap'] = market_cap
             crypto['volume_24h'] = volume_24
 
-            if crypto['name'] :
+            if crypto['name']:
                 yield crypto
