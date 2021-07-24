@@ -24,14 +24,15 @@ class ArticlesSpider(scrapy.Spider):
         all_div_articles = response.css('div.list-item')
 
         for articles in all_div_articles:
-            title = articles.css('h3.typescale-2 a::text').extract()
+            title = articles.css('h3.post__title a::text').extract()
             texte = articles.css('div.excerpt::text').extract()
             author = articles.css('a.entry-author__name::text').extract()
-            full_article_ref = articles.css('h3.typescale-2 a::attr(href)').extract()
+            full_article_ref = articles.css('h3.post__title a::attr(href)').extract()
 
             article['title'] = title
             article['texte'] = texte
             article['author'] = author
             article['full_article_ref'] = full_article_ref
 
-            yield article
+            if article['title']:
+                yield article
