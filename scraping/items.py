@@ -1,13 +1,8 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 import scrapy
 
 
-class CryptoItem(scrapy.Item) :
-    # define the fields for your item here like:
+# Articles
+class ArticleItem(scrapy.Item):
     title = scrapy.Field()
     texte = scrapy.Field()
     author = scrapy.Field()
@@ -15,14 +10,8 @@ class CryptoItem(scrapy.Item) :
     img_src = scrapy.Field()
 
 
-class GoogleItem(scrapy.Item) :
-    title = scrapy.Field()
-    texte = scrapy.Field()
-    media = scrapy.Field()
-    full_article_ref = scrapy.Field()
-
-
-class CryptoMarketItem(scrapy.Item) :
+# Coin market
+class CoinMarketItem(scrapy.Item):
     name = scrapy.Field()
     symbol = scrapy.Field()
     price = scrapy.Field()
