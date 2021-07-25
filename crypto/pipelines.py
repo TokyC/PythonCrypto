@@ -17,13 +17,13 @@ class CryptoPipeline :
 
         # Connection à la DB
         self.conn = pymongo.MongoClient(
-            "mongodb+srv://Toky:NoSQLProject2021@cluster0.squca.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+            "mongodb+srv://Toky:PythonProject@cluster0.squca.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
         )
 
     def process_item(self, article, spider) :
         if spider.name == 'cryptoArticles' :
             db = self.conn["articles"]
-            self.collection = db['articles_db']
+            self.collection = db['Cryptonaute']
             self.collection.insert(dict(article))
             return article
         elif spider.name == 'cryptoMarket':
@@ -33,6 +33,6 @@ class CryptoPipeline :
             return article
         elif spider.name == 'GoogleArticles':
             db = self.conn["articles"]
-            self.collection = db["googleNews"]
+            self.collection = db["GoogleNews"]
             self.collection.insert(dict(article))
             return article
