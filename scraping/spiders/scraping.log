@@ -1,0 +1,206 @@
+2021-07-26 20:41:39 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: scraping)
+2021-07-26 20:41:39 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19042-SP0
+2021-07-26 20:41:39 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-07-26 20:41:39 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scraping',
+ 'LOG_FILE': 'scraping.log',
+ 'NEWSPIDER_MODULE': 'scraping.spiders',
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'SPIDER_MODULES': ['scraping.spiders']}
+2021-07-26 20:41:39 [scrapy.extensions.telnet] INFO: Telnet Password: 937adcbcd0bd7fa5
+2021-07-26 20:41:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-07-26 20:41:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-07-26 20:41:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-07-26 20:41:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraping.pipelines.ScrapingPipeline']
+2021-07-26 20:41:43 [scrapy.core.engine] INFO: Spider opened
+2021-07-26 20:41:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-07-26 20:41:43 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:41:44 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): r3.o.lencr.org:80
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:41:44 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): r3.o.lencr.org:80
+2021-07-26 20:41:44 [urllib3.connectionpool] DEBUG: http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Verifying response
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Responder is issuer
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Caching OCSP response.
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:41:44 [urllib3.connectionpool] DEBUG: http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Verifying response
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Responder is issuer
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Caching OCSP response.
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Using cached OCSP response.
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Using cached OCSP response.
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Using cached OCSP response.
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: Using cached OCSP response.
+2021-07-26 20:41:44 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:41:44 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://consent.google.com/m?continue=https://news.google.com/search?q%3DBitcoin%26hl%3Dfr&gl=FR&m=0&pc=n&hl=fr&src=1> from <GET https://news.google.com/search?q=Bitcoin&hl=fr>
+2021-07-26 20:41:44 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://consent.google.com/ml?continue=https://news.google.com/search?q%3DBitcoin%26hl%3Dfr&gl=FR&hl=fr&pc=n&src=1> from <GET https://consent.google.com/m?continue=https://news.google.com/search?q%3DBitcoin%26hl%3Dfr&gl=FR&m=0&pc=n&hl=fr&src=1>
+2021-07-26 20:41:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://consent.google.com/ml?continue=https://news.google.com/search?q%3DBitcoin%26hl%3Dfr&gl=FR&hl=fr&pc=n&src=1> (referer: None)
+2021-07-26 20:41:44 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-07-26 20:41:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 908,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 7404,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 2,
+ 'elapsed_time_seconds': 0.478672,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 7, 26, 18, 41, 44, 408115),
+ 'httpcompression/response_bytes': 10927,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 43,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2021, 7, 26, 18, 41, 43, 929443)}
+2021-07-26 20:41:44 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-07-26 20:42:10 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: scraping)
+2021-07-26 20:42:10 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19042-SP0
+2021-07-26 20:42:10 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-07-26 20:42:10 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scraping',
+ 'LOG_FILE': 'scraping.log',
+ 'NEWSPIDER_MODULE': 'scraping.spiders',
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'SPIDER_MODULES': ['scraping.spiders']}
+2021-07-26 20:42:10 [scrapy.extensions.telnet] INFO: Telnet Password: c03796fdf76cc8d0
+2021-07-26 20:42:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-07-26 20:42:11 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-07-26 20:42:11 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-07-26 20:42:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraping.pipelines.ScrapingPipeline']
+2021-07-26 20:42:15 [scrapy.core.engine] INFO: Spider opened
+2021-07-26 20:42:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-07-26 20:42:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:42:15 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): r3.o.lencr.org:80
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:42:15 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): r3.o.lencr.org:80
+2021-07-26 20:42:15 [urllib3.connectionpool] DEBUG: http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Verifying response
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Responder is issuer
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Caching OCSP response.
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:42:15 [urllib3.connectionpool] DEBUG: http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: OCSP response status: <OCSPResponseStatus.SUCCESSFUL: 0>
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Verifying response
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Responder is issuer
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Caching OCSP response.
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Using cached OCSP response.
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:42:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://consent.google.com/m?continue=https://news.google.com/search?q%3DBitcoin%26hl%3Dfr&gl=FR&m=0&pc=n&hl=fr&src=1> from <GET https://news.google.com/search?q=Bitcoin&hl=fr>
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Using cached OCSP response.
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Using cached OCSP response.
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Peer did not staple an OCSP response
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Requesting OCSP data
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Trying http://r3.o.lencr.org
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: Using cached OCSP response.
+2021-07-26 20:42:15 [pymongo.ocsp_support] DEBUG: OCSP cert status: <OCSPCertStatus.GOOD: 0>
+2021-07-26 20:42:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://consent.google.com/ml?continue=https://news.google.com/search?q%3DBitcoin%26hl%3Dfr&gl=FR&hl=fr&pc=n&src=1> from <GET https://consent.google.com/m?continue=https://news.google.com/search?q%3DBitcoin%26hl%3Dfr&gl=FR&m=0&pc=n&hl=fr&src=1>
+2021-07-26 20:42:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://consent.google.com/ml?continue=https://news.google.com/search?q%3DBitcoin%26hl%3Dfr&gl=FR&hl=fr&pc=n&src=1> (referer: None)
+2021-07-26 20:42:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-07-26 20:42:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 908,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 7404,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 2,
+ 'elapsed_time_seconds': 0.323869,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 7, 26, 18, 42, 15, 523238),
+ 'httpcompression/response_bytes': 10927,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 43,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2021, 7, 26, 18, 42, 15, 199369)}
+2021-07-26 20:42:15 [scrapy.core.engine] INFO: Spider closed (finished)
